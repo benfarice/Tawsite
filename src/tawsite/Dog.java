@@ -1,40 +1,21 @@
 package tawsite;
 
-public class Dog {
-	private String _name ;
-	private String _color;
-	private int _size; 
+public class Dog extends Animal{
 	
+	private int _NumberOfBarks;
 	
-	public void jump(){}
-	
-	public void moveRight(){}
-
-	public void moveLeft(){}
-	
-	
-	public String get_name() {
-		return this._name;
-	}
-
-	public String get_color() {
-		return this._color;
-	}
-
-	public int get_size() {
-		return this._size;
-	}
-
-	
-	public void set_name(String name) {
-		this._name=name;
+	//Constructors go here
+	public Dog(){
+		_color="Brown";
 	}
 	
-	public void set_color(String color) {
-		this._color=color;
+	public Dog(String name){
+		_name=name;
 	}
 	
-	public void set_size(int size) {
-		this._size=size;
+	public Dog(String name,String color,int size,int numberOfBarks){
+		super(name,color,size);
+		this._NumberOfBarks = numberOfBarks;
 	}
+	
 }
