@@ -18,7 +18,9 @@ public class Animal {
 	
 	
 	
-	public void jump(){}
+	public void jump(){
+		System.out.println("The Animal jump");
+	}
 	
 	public void moveRight(){}
 

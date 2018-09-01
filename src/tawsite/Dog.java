@@ -17,5 +17,8 @@ public class Dog extends Animal{
 		super(name,color,size);
 		this._NumberOfBarks = numberOfBarks;
 	}
+	public void jump(){
+		System.out.println("The Dog jump");
+	}
 	
 }
