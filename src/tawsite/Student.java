@@ -47,6 +47,11 @@ public class Student {
 		this._testA=new_testC;
 	}
 	
+	public int testsAvg() {
+		return (this._testA+this._testB+this._testC)/3;
+	}
+	
+	
 	public static void main(String[] args) {}
 
 }
