@@ -19,4 +19,12 @@ public class ClassRoom {
 	public Student[] getStudents() {
 		return _students;
 	}
+	
+	public String ToString() {
+		String res = "A class tests chart \nname\t\ttestA\ttestB\ttestC\n";
+		for (int i = 0; i < _students.length; i++) {
+			res+=_students[i].get_name()+"\t\t"+_students[i].get_testA()+"\t"+_students[i].get_testB()+"\t"+_students[i].get_testC()+"\n";
+		}
+		return res;
+	}
 }
